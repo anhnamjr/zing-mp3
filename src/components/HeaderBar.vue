@@ -20,9 +20,13 @@
         cols="4"
         class="user-profile-container d-flex justify-content-end align-items-center"
       >
-        <b-button class="rounded-circle"><i class="fas fa-upload"></i></b-button>
+        <b-button class="rounded-circle"
+          ><i class="fas fa-upload"></i
+        ></b-button>
         <b-button class="rounded-circle"><i class="far fa-bell"></i></b-button>
-        <b-button class="rounded-circle"><i class="fas fa-user-alt"></i></b-button>
+        <b-button class="rounded-circle"
+          ><i class="fas fa-user-alt"></i
+        ></b-button>
         <router-link to="/" class="login-btn"><b>Đăng Nhập</b></router-link>
         <span class="setting">
           <b-button class="rounded-circle download-btn"
@@ -119,7 +123,6 @@ export default {
 .nav-link {
   color: #555 !important;
   font-weight: bold;
-
 }
 .nav-link:hover {
   color: #6e55b4 !important;
