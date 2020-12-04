@@ -29,9 +29,6 @@ export default {
       indexSlide: null
     }
   },
-  mounted(){
-    console.log(this.nameCarousel)
-  },
   methods: {
     setSlide(index){
       this.indexSlide = index

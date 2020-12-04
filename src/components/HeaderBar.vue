@@ -30,7 +30,7 @@
         <router-link to="/" class="login-btn"><b>Đăng Nhập</b></router-link>
         <span class="setting">
           <b-button class="rounded-circle download-btn"
-            ><i class="fa fa-arrow-down"></i
+            ><i class="fa fa-chevron-down"></i
           ></b-button>
         </span>
       </b-col>

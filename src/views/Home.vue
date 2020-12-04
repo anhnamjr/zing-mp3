@@ -17,7 +17,8 @@
     </b-container>
     <!-- List -->
     <b-container fluid="sm" class="pt-5 p-0 sm">
-      <music-list></music-list>
+      <music-list title="Click nghe là thích" :numItem="5"/>
+      <music-list title="Click nghe là thích" :numItem="5"/>
     </b-container>
   </div>
 </template>
@@ -25,6 +26,7 @@
 <script>
 import MusicCarousel from "@/components/MusicCarousel";
 import MusicList from "@/components/MusicList";
+// import MusicItem from "@/components/MusicItem";
 export default {
   name: "Home",
   components: { MusicCarousel, MusicList },
@@ -51,9 +53,9 @@ export default {
           imgUrl:
             "https://photo-zmp3.zadn.vn/banner/1/2/e/7/12e7a0ae78122ecda43d817ec1664f0b.jpg",
         },
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
 
