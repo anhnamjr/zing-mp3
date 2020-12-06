@@ -30,11 +30,14 @@ export default {
   props: {
     musicData: Array,
   },
+  mounted(){
+    console.log(this.transitionData)
+  },
   methods: {
     chooseMusic(index) {
       this.$emit("setSlide", index);
     }
-  }
+  },
 };
 </script>
 
