@@ -24,19 +24,16 @@ export default {
             transition: `${(i + 1) * 0.15}s`,
           };
         }
-      )
+      ),
     };
   },
   props: {
     musicData: Array,
   },
-  mounted(){
-    console.log(this.transitionData)
-  },
   methods: {
     chooseMusic(index) {
       this.$emit("setSlide", index);
-    }
+    },
   },
 };
 </script>
@@ -54,7 +51,7 @@ export default {
   height: 70px;
   margin-right: 5px;
   visibility: hidden;
-  box-shadow: 0px 3px 10px rgba(255,255,255,0.8);
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.8);
 }
 
 .music-indicator-item:hover img {
@@ -73,5 +70,4 @@ export default {
   visibility: unset;
   transform: translateY(-110px);
 }
-
 </style>

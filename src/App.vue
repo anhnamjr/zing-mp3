@@ -6,10 +6,14 @@
 </template>
 
 <script>
-import HeaderBar from "@/components/HeaderBar"
+import HeaderBar from "@/components/HeaderBar";
 export default {
-  components: {HeaderBar}
-}
+  components: { HeaderBar },
+};
 </script>
 
-<style></style>
+<style>
+body {
+  background-color: #fcfcfc;
+}
+</style>

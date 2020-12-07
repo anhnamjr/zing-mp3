@@ -4,7 +4,7 @@
       img-height="480px"
       img-width="100%"
       :interval="3000"
-      :ref="nameCarousel"
+      ref="nameCarousel"
     >
       <b-carousel-slide
         v-for="(music, index) in musicData"
@@ -32,7 +32,7 @@ export default {
   methods: {
     setSlide(index){
       this.indexSlide = index
-      this.$refs[this.nameCarousel].setSlide(this.indexSlide)
+      this.$refs.nameCarousel.setSlide(this.indexSlide)
     },
   }
 };
