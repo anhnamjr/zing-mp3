@@ -3,7 +3,7 @@
     <b-carousel
       img-height="480px"
       img-width="100%"
-      :interval="3000"
+      :interval="5000"
       ref="nameCarousel"
     >
       <b-carousel-slide
@@ -33,7 +33,11 @@ export default {
     setSlide(index){
       this.indexSlide = index
       this.$refs.nameCarousel.setSlide(this.indexSlide)
+      this.$refs.nameCarousel.pause()
     },
+    // unpause() {
+    //   this.$refs.nameCarousel.unpause()
+    // }
   }
 };
 </script>

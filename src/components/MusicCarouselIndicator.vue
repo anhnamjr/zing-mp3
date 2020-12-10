@@ -34,6 +34,9 @@ export default {
     chooseMusic(index) {
       this.$emit("setSlide", index);
     },
+    unpause(){
+      this.$emit("unpause");
+    }
   },
 };
 </script>
