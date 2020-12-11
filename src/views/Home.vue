@@ -201,20 +201,17 @@ export default {
           musics: [
             {
               id: 0,
-              imgUrl:
-                "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/0/f/7/2/0f72a309c8ff3a96aaeba9e38ef2ebf0.jpg",
+              imgUrl: "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/0/f/7/2/0f72a309c8ff3a96aaeba9e38ef2ebf0.jpg",
               title: "Nhạc Hàn Hôm Nay Nghe Gì?",
             },
             {
               id: 1,
-              imgUrl:
-                "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/6/1/e/b61e8a4e10a506e1329a34742b8396ff.jpg",
+              imgUrl: "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/6/1/e/b61e8a4e10a506e1329a34742b8396ff.jpg",
               title: "Today's Country Hits",
             },
             {
               id: 2,
-              imgUrl:
-                "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/8/c/f/9/8cf949a6142c633675ba354dd10d3428.jpg",
+              imgUrl: "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/8/c/f/9/8cf949a6142c633675ba354dd10d3428.jpg",
               title: "Đỉnh Cao TRENDING",
             },
             {
@@ -328,18 +325,10 @@ export default {
         },
       ],
       musicChart: [
-        {
-          imgUrl: "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/song-vn-2x.jpg",
-        },
+        { imgUrl: "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/song-vn-2x.jpg" },
         { imgUrl: "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/mv-vn-2x.jpg" },
-        {
-          imgUrl:
-            "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/web_song_usuk.png",
-        },
-        {
-          imgUrl:
-            "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/web_song_kpop.png",
-        },
+        { imgUrl: "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/web_song_usuk.png" },
+        { imgUrl: "//static-zmp3.zadn.vn/skins/zmp3-v5.2/images/web_song_kpop.png" },
       ],
     };
   },

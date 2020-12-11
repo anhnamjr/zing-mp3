@@ -11,7 +11,9 @@
       :style="{ background: `rgba(0,0,0,${opacity})` }"
     >
       <i class="far fa-heart fa-2x"></i>
-      <i class="far fa-play-circle fa-4x"></i>
+      <router-link to="/album/">
+        <i class="far fa-play-circle fa-4x"></i>
+      </router-link>
       <i class="fas fa-ellipsis-h fa-2x"></i>
     </div>
     <div

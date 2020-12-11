@@ -59,8 +59,13 @@ export default {
 
 <style>
 .header-bar {
-  /* border: 1px solid #000; */
   padding: 15px 15px 15px 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #fff;
+  height: auto;
+  z-index: 1060;
 }
 #search {
   padding: 5px 0 5px 35px;

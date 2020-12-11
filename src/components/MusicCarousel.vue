@@ -26,18 +26,17 @@ export default {
   },
   data(){
     return {
-      indexSlide: null
+      indexSlide: null,
+      slideMove: null
     }
   },
   methods: {
     setSlide(index){
       this.indexSlide = index
-      this.$refs.nameCarousel.setSlide(this.indexSlide)
       this.$refs.nameCarousel.pause()
+      clearTimeout(this.slideMove)
+      this.slideMove = setTimeout(() => this.$refs.nameCarousel.setSlide(this.indexSlide), 400)
     },
-    // unpause() {
-    //   this.$refs.nameCarousel.unpause()
-    // }
   }
 };
 </script>
