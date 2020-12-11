@@ -24,12 +24,12 @@ const state = {
   musicLists: [
     {
       title: "Click nghe là thích",
-      musics: [
+      musicList: [
         {
           id: 0,
           imgUrl:
-            "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/9/3/2/4/93241b5e2dbd479b5c257b93ce2beb3c.jpg",
-          title: "Your XMAS List",
+            "https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/covers/2/5/25b49d295be8f15021498c7bce76d8a6_1392265597.jpg",
+          title: "The Love Songs",
         },
         {
           id: 1,
@@ -89,7 +89,7 @@ const state = {
     },
     {
       title: "Rộn ràng nhạc mới",
-      musics: [
+      musicList: [
         {
           id: 0,
           imgUrl:
@@ -154,7 +154,7 @@ const state = {
     },
     {
       title: "Mỉm cười cho ngày vui",
-      musics: [
+      musicList: [
         {
           id: 0,
           imgUrl:
@@ -233,7 +233,7 @@ const state = {
 const getters = {
   allMusicHots: state => state.musicHots,
   allMusicLists: state => state.musicLists,
-  allMusicChart: state => state.musicChart
+  allMusicChart: state => state.musicChart,
 };
 
 const actions = {};

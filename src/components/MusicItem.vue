@@ -1,9 +1,11 @@
 <template>
   <b-col>
-    <div class="music-item">
-      <music-image-item :imgUrl="imgUrl" />
-      <div class="music-item-title">{{ title }}</div>
-    </div>
+    <router-link :to="{name: 'Album', params: {title: link}}" tag="div">
+      <div class="music-item">
+        <music-image-item :imgUrl="imgUrl" />
+        <div class="music-item-title">{{ title }}</div>
+      </div>
+    </router-link>
   </b-col>
 </template>
 
@@ -31,6 +33,12 @@ export default {
     },
   },
   name: "music-item",
+  computed: {
+    link: function() {
+      let scope = this;
+      return this.$convertTitleToLink(scope.title);
+    },
+  },
 };
 </script>
 

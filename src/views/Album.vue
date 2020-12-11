@@ -1,12 +1,38 @@
 <template>
-  <div>
-    Album {{ $route.params.id }}
-  </div>
+  <b-container>
+    <b-row>
+      <b-col></b-col>
+      <b-col></b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
-export default {
+import { mapGetters } from "vuex";
 
+export default { 
+  name: "Album",
+  computed: mapGetters(["allMusicLists"]),
+  data(){
+    return {
+      currentAlbum: null
+    }
+  },
+  methods: {
+    findAlbum: function(title) {
+      let result = undefined
+      this.allMusicLists.forEach(list => {
+        let res = list.musicList.find(item => this.$convertTitleToLink(item.title) === title)
+        if(res){
+          result = res
+        }
+      })
+      return result;
+    }
+  },
+  created(){
+    this.currentAlbum = this.findAlbum(this.$route.params.title)
+  }
 }
 </script>
 

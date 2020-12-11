@@ -21,7 +21,7 @@
         v-for="(musicList, index) in allMusicLists"
         :key="index"
         :numItem="5"
-        :musicList="musicList.musics"
+        :musicList="musicList.musicList"
         :title="musicList.title"
       />
 
